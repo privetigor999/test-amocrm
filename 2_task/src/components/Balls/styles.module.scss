@@ -1,0 +1,111 @@
+.purpleBall {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 900px;
+  top: -2px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+.purpleLight {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+
+  background: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.redBall {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 519px;
+  top: 83px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+.smallRedBall {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 851px;
+  top: 547px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.248) 59.67%,
+    rgba(167, 49, 49, 0.264) 78.59%,
+    rgba(130, 25, 25, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(3px);
+  backdrop-filter: blur(2px);
+}
+
+.redLight {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+@media screen and (max-width: 320px) {
+  .purpleLight {
+    display: none;
+  }
+  .redLight {
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 241px;
+
+    background: #961a1a;
+    opacity: 0.65;
+    filter: blur(196px);
+  }
+  .purpleBall {
+    width: 40px;
+    height: 40px;
+    left: 290px;
+    top: 250px;
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+  }
+  .redBall {
+    display: none;
+  }
+  .smallRedBall {
+    left: 29px;
+    top: 460px;
+    backdrop-filter: blur(2px);
+    filter: blur(2.5px);
+  }
+}

@@ -1,0 +1,212 @@
+.container {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+
+  .headInfoBlock {
+    white-space: pre-wrap;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 58px;
+      color: var(--text-white);
+    }
+    span {
+      font-family: "Inter";
+      background: var(--text-gradient);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .headerInfo {
+      margin-top: 30px;
+      width: 275px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--text-white);
+    }
+  }
+  .giftsBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .giftsHeader {
+      width: 291px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+      color: var(--text-white);
+      span {
+        background: -webkit-gradient(linear, left top, right top);
+        background: -webkit-linear-gradient(left, #fc883a 10%, #fd1d1d 100%);
+        background: -moz-linear-gradient(left, #fc883a 10%, #fd1d1d 100%);
+        background: -o-linear-gradient(left, #fc883a 10%, #fd1d1d 100%);
+        background: linear-gradient(90deg, #fc883a 10%, #fd1d1d 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+      span:last-of-type {
+        background: -webkit-gradient(linear, left top, right top);
+        background: -webkit-linear-gradient(left, #fd6f34 10%, #eea70e 100%);
+        background: -moz-linear-gradient(left, #fd6f34 10%, #eea70e 100%);
+        background: -o-linear-gradient(left, #fd6f34 10%, #eea70e 100%);
+        background: linear-gradient(-90deg, #fd6f34 10%, #eea70e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+    .gifts {
+      display: flex;
+      width: 360px;
+      height: 170px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      color: var(--text-white);
+
+      .gift {
+        width: 180px;
+        height: 68px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
+        .smallScreen {
+          display: none;
+        }
+        .gift_title {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: right;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+        }
+        .gift_text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: right;
+        }
+      }
+    }
+  }
+  button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #4077f3;
+    color: var(--text-white);
+    width: 262px;
+    height: 61px;
+    border: none;
+    cursor: pointer;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+    height: 450px;
+    flex-direction: column;
+    padding: 40px 15px 0;
+    margin-top: 0;
+    .headInfoBlock {
+      p {
+        font-family: "Inter";
+        font-size: 36px;
+        line-height: 44px;
+      }
+      span {
+        font-size: 36px;
+        line-height: 44px;
+      }
+      .headerInfo {
+        font-size: 18px;
+        margin-top: 15px;
+      }
+    }
+    .giftsBlock {
+      margin-top: 45px;
+      .giftsHeader {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+      }
+      .gifts {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 60px;
+        .gift {
+          width: 135px;
+          height: 30px;
+          .smallScreen {
+            display: flex;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            width: 126px;
+            span {
+              background: -webkit-gradient(linear, left top, right top);
+              background: -webkit-linear-gradient(
+                left,
+                #fc883a 10%,
+                #fd1d1d 100%
+              );
+              background: -moz-linear-gradient(left, #fc883a 10%, #fd1d1d 100%);
+              background: -o-linear-gradient(left, #fc883a 10%, #fd1d1d 100%);
+              background: linear-gradient(90deg, #fc883a 10%, #fd1d1d 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-transform: uppercase;
+              font-weight: 700;
+              letter-spacing: -2px;
+              padding-right: 5px;
+            }
+          }
+          .gift_title {
+            display: none;
+          }
+          .gift_text {
+            display: none;
+          }
+        }
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+}
